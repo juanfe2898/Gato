@@ -14,7 +14,7 @@ public class juego {
    int idPadre=0;
    int prob;
    int minmax;//1 max//0 min
-   char m [][]=new char[][]{{' ',' ',' '}, {' ',' ',' '}, {' ',' ',' '}};;
+   char m [][]=new char[][]{{'-','-','-'}, {'-','-','-'}, {'-','-','-'}};;
 
     public juego( int minmax) {
         this.id = id;
@@ -62,7 +62,14 @@ public class juego {
     public void setM(char[][] m) {
         this.m = m;
     }
-
+    
+    public char getMatriz(int a, int b){
+        return this.m[a][b];
+    }
+    
+    public void setMatriz(int a, int b, char valor){
+        this.m[a][b]= valor;
+    }
    }
 
 
